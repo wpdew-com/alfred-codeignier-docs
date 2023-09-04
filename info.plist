@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>85DEDBFA-5B2C-4A72-A187-67C228557332</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8F6D527-9117-4F7B-A6FF-B9B161A20609</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F58D9B04-FCDD-4BF8-9228-91EE660001B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D99DF697-B40E-4899-9FD1-2F07AD3C7241</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>wpdew</string>
+	<key>description</key>
+	<string>An ultra-fast Codeigniter docs search workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Codeigniter.Docs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cod</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Search the Codeigniter docs</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>85DEDBFA-5B2C-4A72-A187-67C228557332</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://codeigniter.com/user_guide/search.html?q={query}&amp;check_keywords=yes&amp;area=default#</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B8F6D527-9117-4F7B-A6FF-B9B161A20609</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>ci4</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>if [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php codeigniter.php "{query}"
+elif [ -f "/usr/local/bin/php" ]; then
+    /usr/local/bin/php codeigniter.php "{query}"
+elif [ -f "/usr/bin/php" ]; then
+    /usr/bin/php codeigniter.php "{query}"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>codeigniter.php</string>
+				<key>subtext</key>
+				<string>CodeIgniter is an Application Development Framework</string>
+				<key>title</key>
+				<string>Codeigniter</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F58D9B04-FCDD-4BF8-9228-91EE660001B8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D99DF697-B40E-4899-9FD1-2F07AD3C7241</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>An ultra-fast Codeigniter docs search workflow for Alfred.
+
+## Usage
+
+Just type `ci4` followed by your search query.
+
+```
+ci4 &lt;query&gt;
+ci4 preview mailables
+```
+
+Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open it in your web browser.
+
+## Changing Branches
+
+By default this workflow searches the `master` branch of the docs. However, you can change that to any branch listed on https://codeigniter.com/user_guide/.</string>
+	<key>uidata</key>
+	<dict>
+		<key>85DEDBFA-5B2C-4A72-A187-67C228557332</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>B8F6D527-9117-4F7B-A6FF-B9B161A20609</key>
+		<dict>
+			<key>xpos</key>
+			<real>340</real>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>D99DF697-B40E-4899-9FD1-2F07AD3C7241</key>
+		<dict>
+			<key>xpos</key>
+			<real>395</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>F58D9B04-FCDD-4BF8-9228-91EE660001B8</key>
+		<dict>
+			<key>xpos</key>
+			<real>180</real>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>wpdew.com</string>
+</dict>
+</plist>

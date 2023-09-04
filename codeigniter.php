@@ -1,5 +1,4 @@
 <?php
-
 use Alfred\Workflows\Workflow;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -233,6 +232,16 @@ $results = [
             "title" => "Database Quick Start: Example Code",
             "subtitle" => "This page shows you an example of how to perform a few basic database operations.",
             "arg" => "https://codeigniter.com/user_guide/database/examples.html",
+        ],
+        [
+            "title" => "Database Configuration",
+            "subtitle" => "The database configuration for your application is located at application/config/database.php.",
+            "arg" => "https://codeigniter.com/user_guide/database/configuration.html",
+        ],
+        [
+            "title" => "Connecting to your Database",
+            "subtitle" => "Connecting to a database and selecting a database are two separate steps.",
+            "arg" => "https://codeigniter.com/user_guide/database/connecting.html",
         ]
     ]
 ];
@@ -255,20 +264,16 @@ foreach ($results['items'] as $key => $value) {
     }
 }
 
-
-
-
 if($query == "") {
     echo json_encode($results);
     exit;
 }elseif($query == $query) {
-    //if $results2 is empty then echo $noresults else echo $results2
     if(empty($results2['items'])){
         echo json_encode($noresults);
         exit;
     }else{
-    echo json_encode($results2);
-    exit;
+        echo json_encode($results2);
+        exit;
     }
 }else{
     echo json_encode($noresults);

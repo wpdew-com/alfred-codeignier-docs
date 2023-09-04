@@ -15,8 +15,8 @@ An ultra-fast CodeIgniter4 docs search workflow for [Alfred 3+](https://www.alfr
 Just type `ci4` followed by your search query.
 
 ```
-ld <query>
-ld preview mailables
+ci4 <query>
+ci4 Installation
 ```
 
 Either press `⌘Y` to Quick Look the result, or press `<enter>` to open it in your web browser.

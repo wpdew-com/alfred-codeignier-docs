@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
-        'name' => 'tillkruss/alfred-laravel-docs',
-        'pretty_version' => '0.3.3',
-        'version' => '0.3.3.0',
+        'name' => 'wpdew-com/alfred-codeignier-docs',
+        'pretty_version' => '0.0.1',
+        'version' => '0.0.1.0',
         'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -10,15 +10,6 @@
         'dev' => true,
     ),
     'versions' => array(
-        'algolia/algoliasearch-client-php' => array(
-            'pretty_version' => '3.2.0',
-            'version' => '3.2.0.0',
-            'reference' => '8d78421f831b31868506e429828935c4dd1a0f23',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../algolia/algoliasearch-client-php',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'joetannenbaum/alfred-workflow' => array(
             'pretty_version' => '1.1.0',
             'version' => '1.1.0.0',
@@ -28,36 +19,9 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'psr/http-message' => array(
-            'pretty_version' => '1.0.1',
-            'version' => '1.0.1.0',
-            'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../psr/http-message',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'psr/log' => array(
-            'pretty_version' => '3.0.0',
-            'version' => '3.0.0.0',
-            'reference' => 'fe5ea303b0887d5caefd3d431c3e61ad47037001',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../psr/log',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'psr/simple-cache' => array(
-            'pretty_version' => '3.0.0',
-            'version' => '3.0.0.0',
-            'reference' => '764e0b3939f5ca87cb904f570ef9be2d78a07865',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../psr/simple-cache',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'tillkruss/alfred-laravel-docs' => array(
-            'pretty_version' => '0.3.3',
-            'version' => '0.3.3.0',
+        'wpdew-com/alfred-codeignier-docs' => array(
+            'pretty_version' => '0.0.1',
+            'version' => '0.0.1.0',
             'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',

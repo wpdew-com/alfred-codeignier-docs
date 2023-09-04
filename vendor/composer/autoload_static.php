@@ -6,42 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite06da10e99a7204326b721c193f8a5b6
 {
-    public static $files = array (
-        '979dffec6fa5205cabd2c2cd1e9e6b3a' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/Http/Psr7/functions.php',
-        '6783aef8c489bbc166eee2536fe605d5' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/functions.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'Psr\\SimpleCache\\' => 16,
-            'Psr\\Log\\' => 8,
-            'Psr\\Http\\Message\\' => 17,
-        ),
         'A' => 
         array (
-            'Algolia\\AlgoliaSearch\\' => 22,
             'Alfred\\Workflows\\' => 17,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Psr\\SimpleCache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'Algolia\\AlgoliaSearch\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src',
-        ),
         'Alfred\\Workflows\\' => 
         array (
             0 => __DIR__ . '/..' . '/joetannenbaum/alfred-workflow/src',

@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5cd85d600dd0cd93603899b7e3937729",
     "packages": [
         {
             "name": "joetannenbaum/alfred-workflow",
             "version": "1.1.0",
-            "version_normalized": "1.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joetannenbaum/alfred-workflow.git",
@@ -24,9 +29,7 @@
                 "pestphp/pest": "^1.21",
                 "phpunit/phpunit": "^9.5"
             },
-            "time": "2022-10-10T17:56:33+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Alfred\\Workflows\\": "src/"
@@ -48,9 +51,16 @@
                 "issues": "https://github.com/joetannenbaum/alfred-workflow/issues",
                 "source": "https://github.com/joetannenbaum/alfred-workflow"
             },
-            "install-path": "../joetannenbaum/alfred-workflow"
+            "time": "2022-10-10T17:56:33+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

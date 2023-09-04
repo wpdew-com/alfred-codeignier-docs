@@ -6,6 +6,8 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
+		<key>D99DF697-B40E-4899-9FD1-2F07AD3C7241</key>
+		<array/>
 		<key>F58D9B04-FCDD-4BF8-9228-91EE660001B8</key>
 		<array>
 			<dict>
@@ -106,6 +108,27 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>bla {query}</string>
+				<key>title</key>
+				<string>title</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>02163E4E-C3C6-4191-88A3-7D49D1B3C938</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>An ultra-fast Codeigniter docs search workflow for Alfred.
@@ -126,6 +149,13 @@ Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open i
 By default this workflow searches the `master` branch of the docs. However, you can change that to any branch listed on https://codeigniter.com/user_guide/.</string>
 	<key>uidata</key>
 	<dict>
+		<key>02163E4E-C3C6-4191-88A3-7D49D1B3C938</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
 		<key>D99DF697-B40E-4899-9FD1-2F07AD3C7241</key>
 		<dict>
 			<key>xpos</key>
